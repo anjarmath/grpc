@@ -21,7 +21,7 @@ class ResultScreen extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: Colors.green.shade50,
-      floatingActionButton: FloatingActionButton.large(
+      floatingActionButton: FloatingActionButton(
         onPressed: () {
           context.go('/');
         },

@@ -217,7 +217,7 @@ class _TestScreenState extends ConsumerState<TestScreen> {
                   question.choices[i].choiceImage != null
                       ? Image.asset(
                           question.choices[i].choiceImage!,
-                          width: MediaQuery.of(context).size.width * .1,
+                          // width: MediaQuery.of(context).size.width * .1,
                         )
                       : Container(),
                   question.choices[i].choiceString != null

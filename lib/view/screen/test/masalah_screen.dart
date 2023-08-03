@@ -33,9 +33,8 @@ class _MasalahScreenState extends State<MasalahScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              const PermasalahanContent(),
+              const Expanded(child: PermasalahanContent()),
               const SizedBox(height: 20),
-              const Spacer(),
               AppButton(
                 color: Colors.green,
                 onPressed: () {

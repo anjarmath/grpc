@@ -26,76 +26,44 @@ class PermasalahanContent extends StatelessWidget {
           const Text(
               'Terkait masalah ini, Iwan menuliskan bukti sebagai berikut:'),
           const Text('Seperti yang terlihat pada gambar 1,'),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TexText(
-                  r'Karena L, bisektor tegak lurus  $\bar{BC}$, memotong  $\bar{BC}$ di M'),
-              SizedBox(width: 5),
-              Text('Baris 1'),
-            ],
+          const ListTile(
+            title: TexText(
+                r'Karena L, bisektor tegak lurus  $\bar{BC}$, memotong  $\bar{BC}$ di M'),
+            trailing: Text('Baris 1'),
           ),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TexText(
-                  r'Maka $m\angle\ BMD=m\angle\ CMD=90$ dan  $\bar{BM}\cong\bar{CM}$'),
-              SizedBox(width: 5),
-              Text('Baris 2'),
-            ],
+          const ListTile(
+            title: TexText(
+                r'Maka $m\angle\ BMD=m\angle\ CMD=90$ dan  $\bar{BM}\cong\bar{CM}$'),
+            trailing: Text('Baris 2'),
           ),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TexText(
-                  r'Dan $\bar{DM}\cong \bar{DM}$ (aksioma sifat refleksif),'),
-              SizedBox(width: 5),
-              Text('Baris 3'),
-            ],
+          const ListTile(
+            title: TexText(
+                r'Dan $\bar{DM}\cong \bar{DM}$ (aksioma sifat refleksif),'),
+            trailing: Text('Baris 3'),
           ),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TexText(
-                  r'$\therefore \Delta BMD \cong \Delta CMD$ (aksioma Sisi-Sudut-Sisi)'),
-              SizedBox(width: 5),
-              Text('Baris 4'),
-            ],
+          const ListTile(
+            title: TexText(
+                r'$\therefore \Delta BMD \cong \Delta CMD$ (aksioma Sisi-Sudut-Sisi)'),
+            trailing: Text('Baris 4'),
           ),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TexText(
-                  r'$\therefore \bar{DB}\cong \bar{DC}$ (def. kekongruenan poligon, korespondensi sisi)'),
-              SizedBox(width: 5),
-              Text('Baris 5'),
-            ],
+          const ListTile(
+            title: TexText(
+                r'$\therefore \bar{DB}\cong \bar{DC}$ (def. kekongruenan poligon, korespondensi sisi)'),
+            trailing: Text('Baris 5'),
           ),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TexText(r'Dan $\bar{DA}\cong \bar{DB}$,'),
-              SizedBox(width: 5),
-              Text('Baris 6'),
-            ],
+          const ListTile(
+            title: TexText(r'Dan $\bar{DA}\cong \bar{DB}$,'),
+            trailing: Text('Baris 6'),
           ),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TexText(
-                  r'Dari baris 5 dan baris 6 $\rightarrow$  $\bar{DA}\cong \bar{DC}$.'),
-              SizedBox(width: 5),
-              Text('Baris 7'),
-            ],
+          const ListTile(
+            title: TexText(
+                r'Dari baris 5 dan baris 6 $\rightarrow$  $\bar{DA}\cong \bar{DC}$.'),
+            trailing: Text('Baris 7'),
           ),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TexText(
-                  r'karena $\bar{DA}\cong \bar{DC}$,$\angle\ DCA \cong \angle\ DAC$.'),
-              SizedBox(width: 5),
-              Text('Baris 8'),
-            ],
+          const ListTile(
+            title: TexText(
+                r'karena $\bar{DA}\cong \bar{DC}$,$\angle\ DCA \cong \angle\ DAC$.'),
+            trailing: Text('Baris 8'),
           ),
           const SizedBox(height: 5),
           const Text(
