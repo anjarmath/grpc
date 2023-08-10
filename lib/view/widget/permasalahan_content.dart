@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:rcgp_checker/view/controller/image_controller.dart';
 import 'package:tex_text/tex_text.dart';
 
-class PermasalahanContent extends StatelessWidget {
-  const PermasalahanContent({
+class PermasalahanContentV1 extends StatelessWidget {
+  const PermasalahanContentV1({
     super.key,
   });
 
@@ -18,8 +19,16 @@ class PermasalahanContent extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                'assets/img/permasalahan.png',
+              GestureDetector(
+                onLongPress: () {
+                  ImageController(context)
+                      .showImageOverlay('assets/img/permasalahan.png');
+                },
+                child: Image.asset(
+                  'assets/img/permasalahan.png',
+                  colorBlendMode: BlendMode.colorBurn,
+                  width: 200,
+                ),
               ),
             ],
           ),
@@ -69,6 +78,135 @@ class PermasalahanContent extends StatelessWidget {
           const Text(
               'Jawablah pertanyaan berikut berdasarkan pada pertanyaan pada masalah 1 dan bukti yang ditulis Iwan:')
         ],
+      ),
+    );
+  }
+}
+
+class PermasalahanContentV2 extends StatelessWidget {
+  const PermasalahanContentV2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Table(
+        border: TableBorder.all(),
+        children: <TableRow>[
+          TableRow(
+            children: [
+              _paddingWrapper(
+                child: const Text(
+                  "Pernyataan",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              _paddingWrapper(
+                child: const Text(
+                  "Alasan",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          TableRow(
+            children: [
+              _paddingWrapper(
+                child: const TexText(
+                    r'L, adalah bisektor tegaklurus $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M'),
+              ),
+              _paddingWrapper(child: const Text("Diberikan")),
+            ],
+          ),
+          TableRow(
+            children: [
+              _paddingWrapper(
+                child: const TexText(
+                    r'$m\angle\ BMD$$=m\angle\ CMD$$=90$ dan  $\bar{BM}\cong \bar{CM}$'),
+              ),
+              _paddingWrapper(
+                  child: const Text(
+                      "Definisi garis tegak lurus dan definisi bisektor ruas garis")),
+            ],
+          ),
+          TableRow(
+            children: [
+              _paddingWrapper(
+                child: const TexText(r'$\bar{DM}\cong \bar{DM}$'),
+              ),
+              _paddingWrapper(child: const Text("Aksioma sifat reflektif")),
+            ],
+          ),
+          TableRow(
+            children: [
+              _paddingWrapper(
+                child: const TexText(r'$\Delta BMD \cong \Delta CMD$'),
+              ),
+              _paddingWrapper(child: const Text("Aksioma Sisi-Sudut-Sisi")),
+            ],
+          ),
+          TableRow(
+            children: [
+              _paddingWrapper(
+                child: const TexText(r'$\bar{DB}\cong \bar{DC} $'),
+              ),
+              _paddingWrapper(
+                  child: const Text("Definisi kekongruenan poligon")),
+            ],
+          ),
+          TableRow(
+            children: [
+              _paddingWrapper(
+                child: const TexText(r'$\bar{DA}\cong \bar{DB}$'),
+              ),
+              _paddingWrapper(child: const Text("Diberikan")),
+            ],
+          ),
+          TableRow(
+            children: [
+              _paddingWrapper(
+                child: const TexText(r'$\angle\ DCA \cong \angle\ DAC  $'),
+              ),
+              _paddingWrapper(
+                  child: const Text(
+                      "Teorema: jika dua sisi dari suatu segitiga kongruen, maka sudut-sudut di hadapannya juga kongruen.")),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _paddingWrapper({
+    required Widget child,
+  }) {
+    return Padding(
+      padding: const EdgeInsets.all(6),
+      child: child,
+    );
+  }
+}
+
+class PermasalahanContentV3 extends StatelessWidget {
+  const PermasalahanContentV3({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width,
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: [
+            Image.asset(
+              'assets/img/flowchart.png',
+              width: 1000,
+            )
+          ],
+        ),
       ),
     );
   }

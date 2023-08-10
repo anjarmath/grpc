@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
   tex_text: ^0.1.8
   flutter_riverpod: ^2.3.6
-  go_router: ^10.0.0
+  go_router: ^7.0.2
   firebase_core: ^2.15.0
 
   cupertino_icons: ^1.0.2

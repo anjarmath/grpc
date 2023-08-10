@@ -107,7 +107,7 @@ List<QuestionModel> questions = <QuestionModel>[
     number: '8.A',
     correctAnswer: [1],
     question:
-        r'Berdasarkan pertanyaan pada masalah 7 dan bukti yang ditulis Iwan,',
+        r'Berdasarkan pertanyaan pada masalah pembuktian dan bukti yang ditulis Iwan,',
     subquestion:
         r'a. Kondisi minimal apa saja yang diperlukan/diberikan (premis)?',
     choices: <ChoicesModel>[
@@ -129,11 +129,11 @@ List<QuestionModel> questions = <QuestionModel>[
     number: '8.B',
     correctAnswer: [2],
     question:
-        r'Berdasarkan pertanyaan pada masalah 7 dan bukti yang ditulis Iwan,',
+        r'Berdasarkan pertanyaan pada masalah pembuktian dan bukti yang ditulis Iwan,',
     subquestion: r'b.	Apa kesimpulan dari bukti ini (konklusi)?',
     choices: <ChoicesModel>[
       ChoicesModel(choiceString: r'$\Delta BMD \cong \Delta CMD$'),
-      ChoicesModel(choiceString: r'$\angle DCA \cong \angle DAC$'),
+      ChoicesModel(choiceString: r'$\bar{DA}\cong \bar{DC}$'),
       ChoicesModel(choiceString: r'$\angle DCA \cong \angle DAC$'),
       ChoicesModel(
           choiceString: r'Segitiga $\Delta DBC$ adalah segitiga samakaki'),

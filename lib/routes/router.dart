@@ -19,16 +19,20 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const HomeScreen(),
       ),
       GoRoute(
-        parentNavigatorKey: routeNavigator,
         name: 'masalah',
         path: '/masalah',
-        builder: (context, state) => const MasalahScreen(),
+        builder: (context, state) => MasalahScreen(
+          type: state.queryParameters["type"],
+        ),
+        parentNavigatorKey: routeNavigator,
       ),
       GoRoute(
         parentNavigatorKey: routeNavigator,
         name: 'test',
         path: '/test',
-        builder: (context, state) => const TestScreen(),
+        builder: (context, state) => TestScreen(
+          type: state.queryParameters["type"],
+        ),
       ),
       GoRoute(
         parentNavigatorKey: routeNavigator,

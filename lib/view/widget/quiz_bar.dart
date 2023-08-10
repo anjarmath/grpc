@@ -1,16 +1,21 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:rcgp_checker/view/widget/permasalahan_content.dart';
+import 'package:rcgp_checker/view/widget/build_masalah.dart';
 
 import 'app_button.dart';
 
 class QuizBar extends StatelessWidget {
-  const QuizBar(
-      {super.key, required this.number, required this.onLeadingClick});
+  const QuizBar({
+    super.key,
+    required this.number,
+    required this.onLeadingClick,
+    this.permasalahanType = "1",
+  });
 
   final String number;
   final Function() onLeadingClick;
+  final String? permasalahanType;
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +50,7 @@ class QuizBar extends StatelessWidget {
                   content: SizedBox(
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height,
-                    child: PermasalahanContent(),
+                    child: buildMasalah(permasalahanType),
                   ),
                   actions: [
                     TextButton(

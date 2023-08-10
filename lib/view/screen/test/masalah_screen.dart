@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:rcgp_checker/view/widget/app_button.dart';
-import 'package:rcgp_checker/view/widget/permasalahan_content.dart';
 
-class MasalahScreen extends StatefulWidget {
-  const MasalahScreen({super.key});
+import '../../widget/build_masalah.dart';
 
-  @override
-  State<MasalahScreen> createState() => _MasalahScreenState();
-}
+class MasalahScreen extends StatelessWidget {
+  final String? type;
+  const MasalahScreen({
+    super.key,
+    this.type = "1",
+  });
 
-class _MasalahScreenState extends State<MasalahScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,12 +33,12 @@ class _MasalahScreenState extends State<MasalahScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              const Expanded(child: PermasalahanContent()),
+              Expanded(child: buildMasalah(type)),
               const SizedBox(height: 20),
               AppButton(
                 color: Colors.green,
                 onPressed: () {
-                  context.go('/test');
+                  context.go('/test?type=$type');
                 },
                 text: const Padding(
                   padding: EdgeInsets.all(8.0),

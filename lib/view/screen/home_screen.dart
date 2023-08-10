@@ -41,10 +41,38 @@ class _HomeScreenState extends State<HomeScreen> {
                   AppButton(
                     color: Colors.green,
                     onPressed: () {
-                      context.go('/masalah');
+                      context.go('/masalah?type=1');
                     },
                     text: const Text(
-                      'MULAI',
+                      'TIPE A',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  AppButton(
+                    color: Colors.green,
+                    onPressed: () {
+                      context.go('/masalah?type=2');
+                    },
+                    text: const Text(
+                      'TIPE B',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  AppButton(
+                    color: Colors.green,
+                    onPressed: () {
+                      context.go('/masalah?type=3');
+                    },
+                    text: const Text(
+                      'TIPE C',
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
                         color: Colors.white,
