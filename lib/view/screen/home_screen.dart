@@ -79,6 +79,20 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   ),
+                  const SizedBox(height: 12),
+                  AppButton(
+                    color: Colors.orange,
+                    onPressed: () {
+                      context.go('/clinic');
+                    },
+                    text: const Text(
+                      'Klinik Matematika (Proof Construction)',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),

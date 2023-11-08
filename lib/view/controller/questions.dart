@@ -5,19 +5,20 @@ List<QuestionModel> questions = <QuestionModel>[
     number: '1',
     correctAnswer: [1],
     question:
-        r'Apakah Anda setuju bahwa  $\bar{BM}\cong\bar{CM}$? Berikan alasannya?',
+        r'Apakah Anda setuju bahwa  $\overline{BM}\cong\overline{CM}$? Berikan alasannya?',
     choices: <ChoicesModel>[
       ChoicesModel(
           choiceString:
-              r'Iya, karena garis l tegaklurus ruas garis  $\bar{BC}$'),
+              r'Iya, karena garis l tegaklurus ruas garis  $\overline{BC}$'),
       ChoicesModel(
           choiceString:
-              r'Iya, karena garis l adalah bisektor ruas garis $\bar{BC}$'),
+              r'Iya, karena garis l adalah bisektor ruas garis $\overline{BC}$'),
       ChoicesModel(
           choiceString:
               r'Iya, karena segitiga $\Delta DBC$ adalah segitiga sama kaki'),
       ChoicesModel(choiceString: r'Iya, karena $m\angle BMD=m\angle CMD=90$'),
-      ChoicesModel(choiceString: r'	Iya, karena $\bar{DA}\cong\bar{DB}$'),
+      ChoicesModel(
+          choiceString: r'	Iya, karena $\overline{DA}\cong\overline{DB}$'),
     ],
   ),
   const QuestionModel(
@@ -37,26 +38,26 @@ List<QuestionModel> questions = <QuestionModel>[
     number: '3',
     correctAnswer: [0],
     question:
-        r'Jika $\Delta BMD$ dan $\Delta CMD$ kongruen, maka sisi berkesesuaiannya dari sisi  $\bar{DB}$?',
+        r'Jika $\Delta BMD$ dan $\Delta CMD$ kongruen, maka sisi berkesesuaiannya dari sisi  $\overline{DB}$?',
     choices: <ChoicesModel>[
-      ChoicesModel(choiceString: r'Sisi $\bar{DC}$'),
-      ChoicesModel(choiceString: r'Sisi $\bar{DA}$'),
-      ChoicesModel(choiceString: r'Sisi $\bar{AC}$'),
-      ChoicesModel(choiceString: r'Sisi $\bar{BM}$'),
-      ChoicesModel(choiceString: r'Sisi $\bar{CM}$'),
+      ChoicesModel(choiceString: r'Sisi $\overline{DC}$'),
+      ChoicesModel(choiceString: r'Sisi $\overline{DA}$'),
+      ChoicesModel(choiceString: r'Sisi $\overline{AC}$'),
+      ChoicesModel(choiceString: r'Sisi $\overline{BM}$'),
+      ChoicesModel(choiceString: r'Sisi $\overline{CM}$'),
     ],
   ),
   const QuestionModel(
     number: '4',
     correctAnswer: [3],
     question:
-        r'Selain kondisi yang diberikan (L, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M; dan  $\bar{DA}\cong\bar{DB}$), kondisi apalagi yang bisa digunakan tanpa perlu pernyataan pendukung/penjelasan?',
+        r'Selain kondisi yang diberikan (L, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M; dan  $\overline{DA}\cong\overline{DB}$), kondisi apalagi yang bisa digunakan tanpa perlu pernyataan pendukung/penjelasan?',
     choices: <ChoicesModel>[
       ChoicesModel(
           choiceString: r'Segitiga $\Delta DBC$ adalah segitiga sama kaki'),
       ChoicesModel(choiceString: r'$m\angle BMD=m\angle CMD=90$'),
       ChoicesModel(choiceString: r'$\angle DBM\cong\angle DCM$'),
-      ChoicesModel(choiceString: r'$\bar{DM}\cong\bar{DM}$'),
+      ChoicesModel(choiceString: r'$\overline{DM}\cong\overline{DM}$'),
       ChoicesModel(choiceString: r'$\angle BDM\cong\angle CDM$'),
     ],
   ),
@@ -113,16 +114,16 @@ List<QuestionModel> questions = <QuestionModel>[
     choices: <ChoicesModel>[
       ChoicesModel(
           choiceString:
-              r'L, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M'),
+              r'L, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M'),
       ChoicesModel(
           choiceString:
-              r'L, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M; dan  $\bar{DA}\cong\bar{DB}$'),
+              r'L, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M; dan  $\overline{DA}\cong\overline{DB}$'),
       ChoicesModel(
           choiceString:
-              r'L, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M; $m\angle BMD=m\angle CMD=90$ dan  $\bar{DA}\cong\bar{DB}$'),
+              r'L, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M; $m\angle BMD=m\angle CMD=90$ dan  $\overline{DA}\cong\overline{DB}$'),
       ChoicesModel(
           choiceString:
-              r'L, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M; $\bar{DM}\cong\bar{DM}$ dan $\bar{DA}\cong\bar{DB}$'),
+              r'L, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M; $\overline{DM}\cong\overline{DM}$ dan $\overline{DA}\cong\overline{DB}$'),
     ],
   ),
   const QuestionModel(
@@ -133,7 +134,7 @@ List<QuestionModel> questions = <QuestionModel>[
     subquestion: r'b.	Apa kesimpulan dari bukti ini (konklusi)?',
     choices: <ChoicesModel>[
       ChoicesModel(choiceString: r'$\Delta BMD \cong \Delta CMD$'),
-      ChoicesModel(choiceString: r'$\bar{DA}\cong \bar{DC}$'),
+      ChoicesModel(choiceString: r'$\overline{DA}\cong \overline{DC}$'),
       ChoicesModel(choiceString: r'$\angle DCA \cong \angle DAC$'),
       ChoicesModel(
           choiceString: r'Segitiga $\Delta DBC$ adalah segitiga samakaki'),
@@ -149,45 +150,45 @@ List<QuestionModel> questions = <QuestionModel>[
     choices: <ChoicesModel>[
       ChoicesModel(
           choiceString:
-              r'Jika garis l, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M; dan  $\bar{DA}\cong \bar{DB}$, maka $\angle DCA \cong \angle DAC$'),
+              r'Jika garis l, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M; dan  $\overline{DA}\cong \overline{DB}$, maka $\angle DCA \cong \angle DAC$'),
       ChoicesModel(
           choiceString:
-              r'Jika garis l, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M; dan  $\bar{DA}\cong \bar{DB}$, maka $\Delta ACB$ segitiga siku-siku'),
+              r'Jika garis l, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M; dan  $\overline{DA}\cong \overline{DB}$, maka $\Delta ACB$ segitiga siku-siku'),
       ChoicesModel(
           choiceString:
-              r'Jika garis l, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M; dan  $\bar{DA}\cong\bar{DB}$, maka $\Delta CBD$ dan $\Delta CBA$ kongruen'),
+              r'Jika garis l, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M; dan  $\overline{DA}\cong\overline{DB}$, maka $\Delta CBD$ dan $\Delta CBA$ kongruen'),
       ChoicesModel(
           choiceString:
-              r'Jika garis l, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M; dan  $\bar{DA}\cong \bar{DB}$, maka  $\bar{AC} \cong \bar{BC}$'),
+              r'Jika garis l, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M; dan  $\overline{DA}\cong \overline{DB}$, maka  $\overline{AC} \cong \overline{BC}$'),
     ],
   ),
   const QuestionModel(
     number: '10.A',
     correctAnswer: [2],
     question:
-        r'Pada bukti yang ditulis Iwan ini, ada pernyataan penting yang disimpulkan dari kondisi bahwa L, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M; dan  $\bar{DA}\cong \bar{DB}$ dan kondisi lainnya.',
+        r'Pada bukti yang ditulis Iwan ini, ada pernyataan penting yang disimpulkan dari kondisi bahwa L, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M; dan  $\overline{DA}\cong \overline{DB}$ dan kondisi lainnya.',
     subquestion: r'a.	Apa pernyataan penting itu?',
     choices: <ChoicesModel>[
-      ChoicesModel(choiceString: r'$\bar{DM}\cong \bar{DM}$'),
+      ChoicesModel(choiceString: r'$\overline{DM}\cong \overline{DM}$'),
       ChoicesModel(choiceString: r'$m\angle BMD=m\angle CMD=90$'),
       ChoicesModel(choiceString: r'$\Delta BMD \cong \Delta CMD$'),
-      ChoicesModel(choiceString: r'$\bar{DB}\cong \bar{DC}$'),
-      ChoicesModel(choiceString: r'$\bar{DA}\cong \bar{DC}$'),
+      ChoicesModel(choiceString: r'$\overline{DB}\cong \overline{DC}$'),
+      ChoicesModel(choiceString: r'$\overline{DA}\cong \overline{DC}$'),
     ],
   ),
   const QuestionModel(
     number: '10.B',
     correctAnswer: [3],
     question:
-        r'Pada bukti yang ditulis Iwan ini, ada pernyataan penting yang disimpulkan dari kondisi bahwa L, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M; dan  $\bar{DA}\cong \bar{DB}$ dan kondisi lainnya.',
+        r'Pada bukti yang ditulis Iwan ini, ada pernyataan penting yang disimpulkan dari kondisi bahwa L, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M; dan  $\overline{DA}\cong \overline{DB}$ dan kondisi lainnya.',
     subquestion:
         r'b. Ada satu pernyataan/kondisi yang diperoleh dari pernyataan penting tersebut untuk menyimpulkan bahwa $\angle\ DCA \cong \angle\ DAC$. Apa pernyataan/kondisi itu?',
     choices: <ChoicesModel>[
-      ChoicesModel(choiceString: r'$\bar{DM}\cong \bar{DM}$'),
+      ChoicesModel(choiceString: r'$\overline{DM}\cong \overline{DM}$'),
       ChoicesModel(choiceString: r'$m\angle\ BMD=m\angle\ CMD=90$'),
       ChoicesModel(choiceString: r'$\Delta BMD \cong \Delta CMD$'),
-      ChoicesModel(choiceString: r'$\bar{DB}\cong \bar{DC}$'),
-      ChoicesModel(choiceString: r'$\bar{DA}\cong \bar{DC}$'),
+      ChoicesModel(choiceString: r'$\overline{DB}\cong \overline{DC}$'),
+      ChoicesModel(choiceString: r'$\overline{DA}\cong \overline{DC}$'),
     ],
   ),
   const QuestionModel(
@@ -197,16 +198,16 @@ List<QuestionModel> questions = <QuestionModel>[
     choices: <ChoicesModel>[
       ChoicesModel(
           choiceString:
-              r'Jika garis L adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M maka $\Delta BMD \cong \Delta CMD$'),
+              r'Jika garis L adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M maka $\Delta BMD \cong \Delta CMD$'),
       ChoicesModel(
           choiceString:
-              r'Jika garis L, adalah bisektor $\bar{BC}$, memotong  $\bar{AB}$ di D maka $\bar{DB}\cong \bar{DC}$'),
+              r'Jika garis L, adalah bisektor $\overline{BC}$, memotong  $\overline{AB}$ di D maka $\overline{DB}\cong \overline{DC}$'),
       ChoicesModel(
           choiceString:
               r'Jika $\Delta BMD \cong \Delta CMD$ maka $\angle\ DCA \cong \angle\ DAC$'),
       ChoicesModel(
           choiceString:
-              r'Jika $\Delta BMD \cong \Delta CMD$ maka $\bar{DA}\cong \bar{DC}$'),
+              r'Jika $\Delta BMD \cong \Delta CMD$ maka $\overline{DA}\cong \overline{DC}$'),
     ],
   ),
   const QuestionModel(
@@ -222,7 +223,7 @@ List<QuestionModel> questions = <QuestionModel>[
     number: '13.A',
     correctAnswer: [0],
     question:
-        r'Pernyataan A: "Jika L, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M; dan  $\bar{DA}\cong \bar{DB}$; maka $\angle\ DCA$ dan $\angle\ DAC$ kongruen.".',
+        r'Pernyataan A: "Jika L, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M; dan  $\overline{DA}\cong \overline{DB}$; maka $\angle\ DCA$ dan $\angle\ DAC$ kongruen.".',
     subquestion:
         r'a.	Apakah Anda setuju bahwa proses bukti tersebut bisa membuktikan pernyataan A selalu benar?',
     choices: <ChoicesModel>[
@@ -234,7 +235,7 @@ List<QuestionModel> questions = <QuestionModel>[
     number: '13.B',
     correctAnswer: [1],
     question:
-        r'Pernyataan A: "Jika L, adalah bisektor tegaklurus  $\bar{BC}$, memotong  $\bar{AB}$ di D, dan memotong  $\bar{BC}$ di M; dan  $\bar{DA}\cong \bar{DB}$; maka $\angle\ DCA$ dan $\angle\ DAC$ kongruen.".',
+        r'Pernyataan A: "Jika L, adalah bisektor tegaklurus  $\overline{BC}$, memotong  $\overline{AB}$ di D, dan memotong  $\overline{BC}$ di M; dan  $\overline{DA}\cong \overline{DB}$; maka $\angle\ DCA$ dan $\angle\ DAC$ kongruen.".',
     subquestion:
         r'b.	Apakah Anda setuju bahwa proses bukti tersebut bisa membuktikan pernyataan A kadang benar dan kadang salah?',
     choices: <ChoicesModel>[
@@ -247,7 +248,7 @@ List<QuestionModel> questions = <QuestionModel>[
     correctAnswer: [0],
     title: 'Jawablah pertanyaan berikut berdasarkan pengetahuan Anda.',
     question:
-        r'Sebuah lingkaran dengan pusat P, jari-jari $\bar{PS}$ dan  $\bar{PQ}$. Jika T adalah titik tengah  $\bar{PQ}$,  $\bar{ST}\bot \bar{PQ}$, dan S adalah titik tengah  $\bar{PR}$, apakah $\Delta RSQ$ segitiga samakaki?',
+        r'Sebuah lingkaran dengan pusat P, jari-jari $\overline{PS}$ dan  $\overline{PQ}$. Jika T adalah titik tengah  $\overline{PQ}$,  $\overline{ST}\bot \overline{PQ}$, dan S adalah titik tengah  $\overline{PR}$, apakah $\Delta RSQ$ segitiga samakaki?',
     choices: <ChoicesModel>[
       ChoicesModel(choiceString: r'Ya'),
       ChoicesModel(choiceString: r'Tidak'),
@@ -258,11 +259,11 @@ List<QuestionModel> questions = <QuestionModel>[
     correctAnswer: [1, 2, 4],
     title: 'Jawablah pertanyaan berikut berdasarkan pengetahuan Anda.',
     question:
-        r'Jika pada suatu segitiga $\Delta PQR$, titik S adalah titik tengah  $\bar{PQ}$, titik U adalah titik potong antara ruas garis  $\bar{TS}$ dan  $\bar{QR}$, dan  $\bar{ST}\bot \bar{PQ}$ serta $\bar{UQ}\cong \bar{UR}$, kesimpulan apa yang bisa dibuat? (bisa pilih lebih dari satu)',
+        r'Jika pada suatu segitiga $\Delta PQR$, titik S adalah titik tengah  $\overline{PQ}$, titik U adalah titik potong antara ruas garis  $\overline{TS}$ dan  $\overline{QR}$, dan  $\overline{ST}\bot \overline{PQ}$ serta $\overline{UQ}\cong \overline{UR}$, kesimpulan apa yang bisa dibuat? (bisa pilih lebih dari satu)',
     choices: <ChoicesModel>[
-      ChoicesModel(choiceString: r'$\bar{PR}\cong \bar{PQ}$'),
+      ChoicesModel(choiceString: r'$\overline{PR}\cong \overline{PQ}$'),
       ChoicesModel(choiceString: r'$\Delta PUR$ segitiga samakaki'),
-      ChoicesModel(choiceString: r'$\bar{RU}\cong \bar{PU}$'),
+      ChoicesModel(choiceString: r'$\overline{RU}\cong \overline{PU}$'),
       ChoicesModel(choiceString: r'$\angle\ PUR \cong \angle\ PUQ$'),
       ChoicesModel(choiceString: r'$\angle\ UPR \cong \angle\ URP$'),
     ],
@@ -272,7 +273,7 @@ List<QuestionModel> questions = <QuestionModel>[
     correctAnswer: [0],
     title: 'Jawablah pertanyaan berikut berdasarkan pengetahuan Anda.',
     question:
-        r'Jika D adalah titik tengah  $\bar{AE}$, dan  $\bar{BD}$ dan  $\bar{AE}$ saling tegak lurus, dan  $\bar{AB}\cong\bar{BC}$, maka  apakah $m\angle\ AEC$ sama dengan 90?',
+        r'Jika D adalah titik tengah  $\overline{AE}$, dan  $\overline{BD}$ dan  $\overline{AE}$ saling tegak lurus, dan  $\overline{AB}\cong\overline{BC}$, maka  apakah $m\angle\ AEC$ sama dengan 90?',
     choices: <ChoicesModel>[
       ChoicesModel(choiceString: 'Sama'),
       ChoicesModel(choiceString: 'Tidak Sama'),

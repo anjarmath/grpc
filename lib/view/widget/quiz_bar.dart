@@ -11,11 +11,13 @@ class QuizBar extends StatelessWidget {
     required this.number,
     required this.onLeadingClick,
     this.permasalahanType = "1",
+    this.showPermasalahan = true,
   });
 
   final String number;
   final Function() onLeadingClick;
   final String? permasalahanType;
+  final bool showPermasalahan;
 
   @override
   Widget build(BuildContext context) {
@@ -33,55 +35,58 @@ class QuizBar extends StatelessWidget {
             ],
           ),
         ),
-        AppButton(
-          color: Colors.blue,
-          onPressed: () {
-            showDialog(
-              context: context,
-              barrierDismissible: false,
-              builder: (context) {
-                return AlertDialog(
-                  title: Text(
-                    'Permasalahan',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  content: SizedBox(
-                    width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height,
-                    child: buildMasalah(permasalahanType),
-                  ),
-                  actions: [
-                    TextButton(
-                      onPressed: () {
-                        Navigator.pop(context);
+        if (showPermasalahan)
+          AppButton(
+            color: Colors.blue,
+            onPressed: !showPermasalahan
+                ? () {}
+                : () {
+                    showDialog(
+                      context: context,
+                      barrierDismissible: false,
+                      builder: (context) {
+                        return AlertDialog(
+                          title: Text(
+                            'Permasalahan',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          content: SizedBox(
+                            width: MediaQuery.of(context).size.width,
+                            height: MediaQuery.of(context).size.height,
+                            child: buildMasalah(permasalahanType),
+                          ),
+                          actions: [
+                            TextButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              child: Text('Tutup'),
+                            ),
+                          ],
+                        );
                       },
-                      child: Text('Tutup'),
-                    ),
-                  ],
-                );
-              },
-            );
-          },
-          text: Row(
-            children: const [
-              Icon(
-                Icons.visibility,
-                color: Colors.white,
-              ),
-              SizedBox(
-                width: 2,
-              ),
-              Text(
-                'Permasalahan',
-                style: TextStyle(
+                    );
+                  },
+            text: Row(
+              children: const [
+                Icon(
+                  Icons.visibility,
                   color: Colors.white,
                 ),
-              ),
-            ],
+                SizedBox(
+                  width: 2,
+                ),
+                Text(
+                  'Permasalahan',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
         // AppButton(
         //   color: Colors.red,
         //   onPressed: () {

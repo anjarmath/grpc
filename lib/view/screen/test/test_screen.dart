@@ -154,16 +154,6 @@ class _TestScreenState extends ConsumerState<TestScreen> {
                   ),
                 ),
               ),
-              // Expanded(
-              //   child: Wrap(
-              //     direction: Axis.vertical,
-              //     children: [
-              //       ..._buildOptions(question,
-              //           ref.read(questionStateProvider.notifier).getIndex()),
-              //     ],
-              //   ),
-              // ),
-
               QuizzBottomBar(number: question.number)
             ],
           ),
